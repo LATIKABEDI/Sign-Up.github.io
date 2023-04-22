@@ -14,14 +14,14 @@
 <body>
     <div class="main">
         <div class="signup">
-            <form action="" name="latika" onsubmit="return validateForm()">
+            <form action="" name="latika">
                 <label for="">Sign Up</label>
-                <input type="text" name="fName" placeholder="First Name">
-                <input type="text" name="lName" placeholder="Last Name">
-                <input type="email" name="email" placeholder="Email">
-                <input type="text" name="uName" placeholder="Username"> 
-                <input type="password" name="password" id="pass" placeholder="Password">
-                <button onclick="passwordValidation()">Submit</button>
+                <input type="text" name="fName" placeholder="First Name" required>
+                <input type="text" name="lName" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="uName" placeholder="Username" required> 
+                <input type="password" name="password" id="pass" placeholder="Password" required>
+                <button onclick="validateForm() ; passwordValidation()">Submit</button>
             </form>
         </div>
     </div>
